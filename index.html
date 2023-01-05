@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6a4a982558.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <header class="navigation container">
+      <nav>
+        <ul class="navbar">
+          <div>
+            <li class="nav-item brand-name">Shoemakers</li>
+          </div>
+          <div class="site-nav">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">New Collection</li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="item-previews container">
+        <div class="title container">
+          <h1>Shoes</h1>
+        </div>
+        <div class="previews container">
+          <div class="shoe-preview">
+            <p class="shoe-name">Yellow Shoe</p>
+            <div class="shoe-img">
+              <img src="IMGs/YellowShoes.jpg" alt="Yellow Shoes" />
+            </div>
+            <div class="shoe-details">
+              <p class="shoe-price">$40</p>
+              <p class="cart-btn">Add To Cart</p>
+              <i
+                class="fa-regular fa-heart fa-2x"
+                onclick="changeIcon(this)"
+              ></i>
+            </div>
+          </div>
+          <div class="shoe-preview">
+            <p class="shoe-name">Yellow Shoe</p>
+            <div class="shoe-img">
+              <img src="IMGs/YellowShoes.jpg" alt="Yellow Shoes" />
+            </div>
+            <div class="shoe-details">
+              <p class="shoe-price">$40</p>
+              <p class="cart-btn">Add To Cart</p>
+              <i
+                class="fa-regular fa-heart fa-2x"
+                onclick="changeIcon(this)"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shopping-cart container">
+        <div class="cart-titles">
+          <span class="item-title">ITEM</span>
+          <div class="line"></div>
+          <span class="item-price">PRICE</span>
+          <div class="line"></div>
+          <span class="item-quantity">QUANTITY</span>
+        </div>
+      </section>
+      <section class="cart-items">
+        <div class="first-item">
+          <div class="cart-img-box">
+            <img
+              src="IMGs/YellowShoes.jpg"
+              class="cart-img"
+              alt="Yellow Shoes"
+            />
+            <span class="cart-item-name">Yellow Shoes</span>
+          </div>
+          <span class="cart-price">$40</span>
+          <div class="quantity-actions">
+            <button class="minus-btn">-</button>
+            <p class="num">0</p>
+            <button class="add-btn">+</button>
+            <p class="remove-btn">Remove</p>
+          </div>
+        </div>
+        <div class="second-item">
+          <div class="cart-img-box">
+            <img
+              src="IMGs/YellowShoes.jpg"
+              class="cart-img"
+              alt="Yellow Shoes"
+            />
+            <span class="cart-item-name">Yellow Shoes</span>
+          </div>
+          <span class="cart-price">$40</span>
+          <div class="quantity-actions">
+            <button class="minus-btn" id="totalClicksminus">-</button>
+            <p class="num">0</p>
+            <button class="add-btn" id="totalClicksplus">+</button>
+            <p class="remove-btn">Remove</p>
+          </div>
+        </div>
+      </section>
+      <section class="cart-checkout container">
+        <p class="checkout-btn">Checkout</p>
+        <p class="total">Total: <span></span></p>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!-- <p><i class="fa-solid plus fa-plus" onclick="totalClick1(1)"></i></p> -->
+<!-- <i class="fa-solid fa-heart heart fa-beat"></i> -->

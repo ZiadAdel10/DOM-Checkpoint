@@ -1,0 +1,270 @@
+/* - Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128  
+
+ COLORS
+
+- Primary:
+-Secondary:
+ #e44c4c 
+- Tints: 
+
+- Shades: 
+- Accents:
+- Greys
+#555
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#333
+
+SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+*/
+
+/****** - *******/
+/* Navigation Bar*/
+/****** - *******/
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  background-color: lightgreen;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 70rem;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  cursor: pointer;
+}
+
+.brand-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 10rem;
+  gap: 4rem;
+}
+
+/****** - *******/
+/* Collection Section*/
+/****** - *******/
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.previews {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.shoe-preview {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+}
+
+/* .shoe-preview:hover {
+  transition: all 0.3s;
+} */
+
+.shoe-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.4rem;
+}
+
+.shoe-details {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.shoe-price {
+  font-size: 1.4rem;
+}
+
+.cart-btn {
+  background-color: lightgreen;
+  padding: 1rem;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.fa-heart {
+  cursor: pointer;
+}
+
+/****** - *******/
+/* Cart Heading Section*/
+/****** - *******/
+
+.shopping-cart {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.8rem;
+}
+
+.cart-titles {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  gap: 11.5rem;
+  margin-top: 10rem;
+}
+
+.item-title,
+.item-quantity {
+  margin: 0 10rem;
+}
+
+.item-price {
+  margin-left: 10rem;
+}
+
+/****** - *******/
+/* Cart Items*/
+/****** - *******/
+
+.cart-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 9px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.035);
+  width: 80%;
+  margin: 0 auto 4.8rem auto;
+  padding: 2.8rem;
+}
+.cart-img-box {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.cart-img {
+  height: 10rem !important;
+  width: 50% !important;
+  border-radius: 11px;
+}
+
+.first-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24rem;
+  /* gap: 5rem; */
+}
+
+.second-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24rem;
+  /* gap: 10rem; */
+}
+
+.cart-price {
+  margin: 0 10rem;
+}
+
+.quantity-actions {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.minus-btn {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.add-btn {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.remove-btn {
+  cursor: pointer;
+  background-color: #e44c4c;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 9px;
+}
+
+/****** - *******/
+/* Cart Checkout*/
+/****** - *******/
+
+.cart-checkout {
+  display: flex;
+  margin: 6rem auto;
+  justify-content: center;
+  align-items: center;
+  gap: 50rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.total {
+  color: #e44c4c;
+  padding: 1.8rem;
+  border-radius: 9px;
+}
+
+.checkout-btn {
+  background-color: lightblue;
+  padding: 1.8rem;
+  border-radius: 9px;
+}
