@@ -43,10 +43,14 @@
           <div class="shoe-preview">
             <p class="shoe-name">Yellow Shoe</p>
             <div class="shoe-img">
-              <img src="IMGs/YellowShoes.jpg" alt="Yellow Shoes" />
+              <img
+                src="IMGs/YellowShoes.jpg"
+                class="shoe-img-item"
+                alt="Yellow Shoes"
+              />
             </div>
             <div class="shoe-details">
-              <p class="shoe-price">$40</p>
+              <span class="shoe-price">$40</span>
               <p class="cart-btn">Add To Cart</p>
               <i
                 class="fa-regular fa-heart fa-2x"
@@ -55,12 +59,16 @@
             </div>
           </div>
           <div class="shoe-preview">
-            <p class="shoe-name">Yellow Shoe</p>
+            <p class="shoe-name">Green Shoe</p>
             <div class="shoe-img">
-              <img src="IMGs/YellowShoes.jpg" alt="Yellow Shoes" />
+              <img
+                src="IMGs/YellowShoes.jpg"
+                class="shoe-img-item"
+                alt="Yellow Shoes"
+              />
             </div>
             <div class="shoe-details">
-              <p class="shoe-price">$40</p>
+              <span class="shoe-price">$50</span>
               <p class="cart-btn">Add To Cart</p>
               <i
                 class="fa-regular fa-heart fa-2x"
@@ -79,45 +87,10 @@
           <span class="item-quantity">QUANTITY</span>
         </div>
       </section>
-      <section class="cart-items">
-        <div class="first-item">
-          <div class="cart-img-box">
-            <img
-              src="IMGs/YellowShoes.jpg"
-              class="cart-img"
-              alt="Yellow Shoes"
-            />
-            <span class="cart-item-name">Yellow Shoes</span>
-          </div>
-          <span class="cart-price">$40</span>
-          <div class="quantity-actions">
-            <button class="minus-btn">-</button>
-            <p class="num">0</p>
-            <button class="add-btn">+</button>
-            <p class="remove-btn">Remove</p>
-          </div>
-        </div>
-        <div class="second-item">
-          <div class="cart-img-box">
-            <img
-              src="IMGs/YellowShoes.jpg"
-              class="cart-img"
-              alt="Yellow Shoes"
-            />
-            <span class="cart-item-name">Yellow Shoes</span>
-          </div>
-          <span class="cart-price">$40</span>
-          <div class="quantity-actions">
-            <button class="minus-btn" id="totalClicksminus">-</button>
-            <p class="num">0</p>
-            <button class="add-btn" id="totalClicksplus">+</button>
-            <p class="remove-btn">Remove</p>
-          </div>
-        </div>
-      </section>
+      <section class="cart-items"></section>
       <section class="cart-checkout container">
         <p class="checkout-btn">Checkout</p>
-        <p class="total">Total: <span></span></p>
+        <p class="total">Total: <span class="total-price">$0</span></p>
       </section>
     </main>
   </body>

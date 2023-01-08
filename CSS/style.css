@@ -37,6 +37,7 @@ Medium: 11px
   display: flex;
   justify-content: center;
   background-color: lightgreen;
+  width: 100%;
 }
 
 .navbar {
@@ -192,20 +193,11 @@ Medium: 11px
   border-radius: 11px;
 }
 
-.first-item {
+.cart-row {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24rem;
-  /* gap: 5rem; */
-}
-
-.second-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24rem;
-  /* gap: 10rem; */
 }
 
 .cart-price {
@@ -240,6 +232,11 @@ Medium: 11px
   color: #fff;
   padding: 0.8rem;
   border-radius: 9px;
+}
+
+.quantity {
+  width: 4.8rem;
+  text-align: center;
 }
 
 /****** - *******/

@@ -71,3 +71,7 @@ img {
 .fa-solid {
   color: #e44c4c;
 }
+
+.hidden {
+  display: none !important;
+}
